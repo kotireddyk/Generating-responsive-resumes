@@ -1,0 +1,67 @@
+#container, #preview
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+}
+
+#preview
+{
+	height: 900px;
+	width: 900px;
+}
+
+.header
+{
+	margin-top: 50px;
+	margin-left: 235px;
+}
+
+.profile, .education, .work
+{
+	background-color: #ff3366;
+	text-align: center;
+	font-family:arial;
+	position: relative;
+	padding: 0px 10px;
+	height: 20px;
+	line-height: 20px;
+}
+
+.profile
+{
+	background-color: yellow;
+}
+
+#pro, #edu, #work
+{
+	/*background-color: #ff6633;*/
+	margin: 20px;
+
+}
+
+#edu, #work, #preview,#pre-middle,#pre-exp, #till,#download
+{
+	display: none;
+}
+
+#next,#back
+{
+	margin-left: 260px;
+}
+
+#head,#download,#final
+{
+	text-align: center;
+}
+
+#pre-body, #pre-midd,#head,#download,#final
+{
+	margin: 20px;
+}
+
+#pre-middle, #pre-exp
+{
+	background-color: transparent;
+}
+

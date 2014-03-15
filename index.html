@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Exact Target</title>
+	<meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/index1.js"></script>
+    <script src="js/index.js"></script>
+ </head>
+<body>
+	<div id="preview">
+		<div id="head">
+		</div>
+        <div id="pre-midd">
+        </div>
+		<div id="pre-body">
+		</div>
+        <div id="final">
+            <button type="submit" name="submit" id="submit">Submit</button>
+            <!--<a href="file:///home/koti/Resume/index.html#" download>Download</a>-->
+        </div>
+        <div id="download">
+            <a href="file:///home/koti/Resume/index.html#" download>Download Your Resume</a>
+        </div>
+        
+		
+	</div>
+	<div id="container">
+		<div class="header">
+			<span class="profile">Profile</span>
+			<span class="education">Education</span>
+			<span class="work">Work</span>
+		</div>
+		<div id="pro">
+			<form method="post">
+				<label for="firstname">First Nmae*</label><br/>
+				<input id="fname" name="firstname" type="text" value placeholder="First Nmae"><br/>
+				<label for="lastname">Last Name*</label><br/>
+				<input id="lname" name="lastname" type="text" value placeholder="Last Nmae"><br/>
+				<label for="email">Email*</label><br/>
+				<input id="email" name="email" type="text" value placeholder="Email"><br/>
+				<label for="mobnum">Mobile Number*</label><br/>
+				<input id="mobnum" name="mobile number" type="text" value placeholder="Mobile Number"><br/>
+				<label for="location">Location</label><br/>
+				<input id="location" name="location" type="text" value placeholder="Location" list="locations">
+				  <datalist id="locations">
+                    <option value="Bangalore, IN">
+                    <option value="Hyderabad, IN">
+                    <option value="Chennai, IN">
+                    <option value="Kerala, IN">
+                    <option value="Pune, IN">
+                    <option value="Mumbai, IN">
+                  </datalist>
+				<br/>
+				<button type="submit" name="next" id="next">Next</button>
+                <button type="reset" name="reset" id="reset">Reset</button>
+			</form>
+		</div>
+		
+		<div id="edu">
+            <div id="pre-middle">
+            </div>
+			<form method="post">
+				<label for="degree">Degree*</label><br/>
+				<input id="degree" name="degree" type="text" value placeholder="Ex. MS, BE, MCA"><br/>
+				<label for="field">Field of*</label><br/>
+				<input id="field" name="field" type="text" value placeholder="Ex. CS, IT"><br/>
+				<label for="uniname">University Name*</label><br/>
+				<input id="uniname" name="universityname" type="text" value placeholder="University Name"><br/>
+				<label for="two">Location*</label><br/>
+				<input id="two" name="location" type="text" value placeholder="Location" list="locations">
+				  <datalist id="locations">
+                    <option value="Bangalore, IN">
+                    <option value="Hyderabad, IN">
+                    <option value="Chennai, IN">
+                    <option value="Kerala, IN">
+                    <option value="Pune, IN">
+                    <option value="Mumbai, IN">
+                  </datalist>
+				<br/>
+				<label for="duration">Duration*</label><br/>
+				<select id="fyselect" name="Year">
+                <option value="-1">Year</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                </select>
+                 To 
+                 <select id="tyselect" name="Year">
+                <option value="-1">Year</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                </select><br/>
+                <a href="#" id="more">+ more education</a><br/>
+                <a href="#" id="remove">+ remove education</a><br/>
+                <button type="submit" name="back" id="back">Back</button>
+                <button type="reset" name="reset" id="reset">Reset</button>
+				<button type="submit" name="next" id="nextone">Next</button>
+			</form>
+		</div>
+
+		<div id="work">
+            <div id="pre-exp">
+            </div>
+			<form method="post">
+				<label for="jobtitle">Last Job Title</label><br/>
+				<input id="jobtitle" name="jobtitle" type="text" value placeholder="Job Title"><br/>
+				<label for="Company">Company</label><br/>
+				<input id="company" name="company" type="text" value placeholder="Company"><br/>
+				<label for="one">Location</label><br/>
+				<input id="one" name="location" type="text" value placeholder="Location" list="locations">
+				<datalist id="locations">
+                    <option value="Bangalore, IN">
+                    <option value="Hyderabad, IN">
+                    <option value="Chennai, IN">
+                    <option value="Kerala, IN">
+                    <option value="Pune, IN">
+                    <option value="Mumbai, IN">
+                  </datalist><br/>
+				<label for="duration">Duration*</label><br/>
+                <!--<span>
+                    <input type="checkbox" id="current" name="current" value="TillDate">
+                    <label for="current">Till Date</label>
+                </span><br/>-->
+				<select id="smselect" name="Month">
+                <option value="-1">Month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+                </select>
+				<select id="syselect" name="Year">
+                <option value="-1">Year</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                </select>
+                
+                 to <!--<span id="till">now</span>-->
+                <select id="emselect" name="Month">
+                <option value="-1">Month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+                </select>
+                <select id="eyselect" name="Year">
+                <option value="-1">Year</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                </select><br/>
+                <a href="#" id="moreexp">+ more experience</a><br/> 
+                <a href="#" id="removeexp">+ remove experience</a><br/>          
+                <button type="submit" name="back" id="back">Back</button>
+                <button type="reset" name="reset" id="reset">Reset</button>
+				<button type="submit" name="preview" id="subtn">Preview</button>
+			</form>
+		</div>
+	</div>
+<!--<button type="submit" onclick="reverseString('koti','reddy','kamjula')">Click me</button>-->
+
+</body>
+</html>
